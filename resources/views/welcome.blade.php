@@ -93,11 +93,8 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
 
-                <h2> Users downloads video {{$downloads ?? 0 }} times </h2>
 
             </div>
         </div>
-
-
     </body>
 </html>

@@ -30,7 +30,7 @@ services:
           - "MYSQL_ROOT_PASSWORD=common404"
           - "MYSQL_DATABASE=laravel"
         volumes:
-          - ${BACKUP_DATA_PATH}/mysql3:/var/lib/mysql
+          - dbdata:/var/lib/mysql
         ports:
           - "33065:3306"
 
@@ -40,3 +40,7 @@ services:
         ports:
           - "6382:6379"
 
+#Volumes
+volumes:
+  dbdata:
+    driver: local
