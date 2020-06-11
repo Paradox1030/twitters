@@ -19,7 +19,7 @@ docker-compose up -d
 
 ```sh
 docker-compose exec php php artisan migrate
-docker-compose exec php php artisan db:seed --class=Categoru
+docker-compose exec php php artisan db:seed --class=Category
 docker-compose exec php php artisan queue:work
 ```
 
